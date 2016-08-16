@@ -1,0 +1,9 @@
+<%= form_for @profile, url: user_profile_path do |f| %>
+<%= f.text_field :breed, placeholder: 'breed' %>
+<%= f.text_field :yob, placeholder: 'year of birth' %>
+<%= f.text_field :image_url, placeholder: 'image_url' %>
+<%= f.text_field :favorite_nap_position, placeholder: 'nap position' %>
+<%= f.text_field :purr_intensity %>
+<%= f.text_field :in_to_head_butts %>
+<%= f.submit %>
+<% end %>

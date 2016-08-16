@@ -1,0 +1,11 @@
+Profile!
+<% if @profile.id.nil? %>
+  <%= link_to 'Create Profile', new_user_profile_path %>
+<% else %>
+<ul>
+<% @profile.attributes.each do |k, v| %>
+  <li><%= k %> : <%= v %></li>
+<% end %>
+</ul>
+<%= link_to 'Edit Profile', edit_user_profile_path %>
+<% end %>

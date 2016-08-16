@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <%= form_for @user, url: { action: :create } do |f| %>
+      <div class="form-group">
+          <%= f.label :email, name: 'Email' %>
+          <%= f.text_field :email, class: "form-control" %>
+      </div>
+      <div class="form-group">
+          <%= f.label :password, name: 'Password' %>
+          <%= f.password_field :password, class: "form-control" %>
+      </div>
+
+
+        <%= f.submit value: 'Login' %>
+      <% end %>
+    </div>
+  </div>
+</div>
